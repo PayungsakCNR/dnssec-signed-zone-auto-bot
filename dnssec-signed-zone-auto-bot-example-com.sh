@@ -1,5 +1,11 @@
 #/bin/sh
 
+##### DNSSEC-SIGNED-ZONE-AUTO-BOT #####
+# Dev : Payungsak Klinchampa (PaOv6.)
+# Version : 1.1
+# pao@payungsakpk.xyz
+######################################
+
 ## Zone parameters.
 ZONE=example.com     ## Your zone name.
 ZONEFILE=example.com.zone  ## Your Zone file.
@@ -18,6 +24,9 @@ EMAIL_TO='admin@example.com' ## Send Report to this email
 EMAIL_FROM='DNSSEC-SIGNED-REPORT<dnssec-signed-report@example.com>' ## Send Report from this email.
 
 ########### Initial ###############
+
+# Change work directory
+cd /var/cache/bind/
 
 ## delete all content in file
 cat /dev/null > $FILE_TEMP_NAME
