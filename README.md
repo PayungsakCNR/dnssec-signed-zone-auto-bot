@@ -12,3 +12,7 @@ dnssec-signed-zone-auto-bot
 5.add cronjob by $ crontab -e <br />
 5.setup cronjob <br />
 6.Done!! <br />
+
+# Update History
+
+V1.1 -> Add Change work directory to /var/cache/bind/
